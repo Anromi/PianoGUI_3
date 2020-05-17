@@ -17,7 +17,6 @@ public class Music {
     public void sound() {
 
         File dirT = new File(new File(this.track).getAbsolutePath());
-        File a = new File(this.track);
         AudioInputStream audioInputStream = null;
 
         try {
