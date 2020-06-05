@@ -2,7 +2,6 @@ package org.anr;
 
 import java.io.File;
 import java.io.IOException;
-import java.io.InputStream;
 import java.util.logging.Logger;
 import javax.sound.sampled.*;
 

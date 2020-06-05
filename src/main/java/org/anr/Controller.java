@@ -5,8 +5,6 @@ import javafx.geometry.Insets;
 import javafx.scene.control.Button;
 import javafx.scene.layout.HBox;
 
-import javax.swing.text.StyledEditorKit;
-import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.logging.Logger;
@@ -35,7 +33,7 @@ public class Controller {
     Music dir;
     List<String> list = new ArrayList<>();
     int[] IntervalList = new int[] { // интервал между черными клавишами
-            12, 22, 2, 20, 2, 2,
+            12, 22, 2, 22, 2, 2,
             22, 2, 22, 2, 2,
             22, 2, 20, 2, 2,
             22, 2, 22, 2, 2,
@@ -71,7 +69,7 @@ public class Controller {
                 button.setPrefSize(20, 30);
                 button.setStyle("-fx-text-fill: rgba(255,0,0,0.5)");
                 button.setStyle("-fx-background-color: black;");
-                HBox.setMargin(button, new Insets(0, 0, 0, IntervalList[n]));
+                hBoxBlack.setMargin(button, new Insets(0, 0, 0, IntervalList[n]));
                 n++;
 
                 // реализация кнопок
@@ -88,6 +86,7 @@ public class Controller {
             hBoxBlack.getChildren().clear();
             counterWhite = 52;
             counterBlack = 36;
+            n = 0;
         });
 
     }
